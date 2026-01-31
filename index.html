@@ -1,36 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIS</title>
+    <title>BIS Dashboard</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+
 <body>
     <div class="main-container">
         <div class="side-bar">
             <h1 class="heading">Excel International</h1>
             <ul>
-                <li><i class="fa-solid fa-house"></i><a href="">Home</a></li>
-                <li><i class="fa-solid fa-users"></i><a href="">User management</a></li>
-                <li><i class="fa-solid fa-address-book"></i><a href="">Contacts</a></li>
-                <li><i class="fa-sharp-duotone fa-regular fa-arrow-trend-down"></i><a href="">Stocks</a></li>
-                <li><i class="fa-solid fa-bag-shopping"></i><a href="">Purchases</a></li>
-                <li><i class="fa-sharp fa-solid fa-bars"></i><a href="">Sale</a></li>
-                <li><i class="fa-sharp fa-solid fa-bars"></i><a href="">Stock Transfer</a></li>
-                <li><i class="fa-sharp fa-solid fa-bars"></i><a href="">Stock Adjustment</a></li>
-                <li><i class="fa-sharp fa-solid fa-bars"></i><a href="">Expenses</a></li>
-                <li><i class="fa-sharp fa-solid fa-bars"></i><a href="">Payment Accounts</a></li>
-                <li><i class="fa-sharp fa-solid fa-bars"></i><a href="">Reports</a></li>
-                <li><i class="fa-sharp fa-solid fa-bars"></i><a href="">Notification templates</a></li>
-                <li><i class="fa-sharp fa-solid fa-bars"></i><a href="">Settings</a></li>
+                <li>
+                    <div class="menu-label">
+                        <i class="fa-solid fa-house"></i>
+                        <a href="#">Home</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="menu-label">
+                        <i class="fa-solid fa-users"></i>
+                        <a href="#">User Management</a>
+                    </div>
+                    <select>
+                        <option value="" selected disabled>Options</option>
+                        <option>Users</option>
+                        <option>Roles</option>
+                        <option>Commission Agents</option>
+                    </select>
+                </li>
+
+                <li>
+                    <div class="menu-label">
+                        <i class="fa-solid fa-address-book"></i>
+                        <a href="#">Contacts</a>
+                    </div>
+                    <select>
+                        <option value="" selected disabled>Options</option>
+                        <option>Suppliers</option>
+                        <option>Customers</option>
+                        <option>Customer Groups</option>
+                        <option>Import Contacts</option>
+                    </select>
+                </li>
+
+                <li>
+                    <div class="menu-label">
+                        <i class="fas fa-chart-line"></i>
+                        <a href="#">Stocks</a>
+                    </div>
+                    <select onchange="window.location.href=this.value;">
+                        <option value="" selected disabled>Options</option>
+                        <option value="">Current Stock</option>
+                        <option value="">Add stock</option>
+                        <option value="">Prints Labels</option>
+                        <option value="">Variations</option>
+                        <option value="">Import Stocks</option>
+                        <option value="">Import Opening Stock</option>
+                        <option value="">Sale Price Group</option>
+                        <option value="">Units</option>
+                        <option value="">Categories</option>
+                        <option value="">Brands</option>
+                        <option value="">Warrienties</option>
+                    </select>
+                </li>
+
+                <li>
+                    <div class="menu-label">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <a href="#">Purchases</a>
+                    </div>
+                    <select onchange="window.location.href=this.value;">
+                        <option value="" selected disabled>Options</option>
+                        <option value="">Purchase Order</option>
+                        <option value="">List Purchase</option>
+                        <option value="">Add Purchase</option>
+                        <option value="">List Purchase Return</option>
+                        <option value="">Payment Clear</option>
+                    </select>
+                </li>
+
+                <li>
+                    <div class="menu-label">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <a href="#">Stock Transfer</a>
+                    </div>
+                    <select>
+                        <option value="" selected disabled>Options</option>
+                        <option>List Stock transfers</option>
+                        <option>Add Stock Transfer</option>
+                    </select>
+                </li>
+
+                <li>
+                    <div class="menu-label">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <a href="#">Stock Adjustment</a>
+                    </div>
+                    <select>
+                        <option value="" selected disabled>Options</option>
+                        <option>List Stock Adjustments</option>
+                        <option>Add Stock Adjustments</option>
+                    </select>
+                </li>
+
+                <li>
+                    <div class="menu-label">
+                        <i class="fa-brands fa-salesforce"></i>
+                        <a href="#">Sale</a>
+                    </div>
+                    <select onchange="window.location.href=this.value;">
+                        <option value="" selected disabled>Options</option>
+                        <option value="">Advenced Order</option>
+                        <option value="">All Sales</option>
+                        <option value="">Add Sales</option>
+                        <option value="">List POS</option>
+                        <option value="">List Drafts</option>
+                        <option value="">Add Quotation</option>
+                        <option value="">List Delivery Challans</option>
+                        <option value="">List Sale Return</option>
+                        <option value="">Shipments</option>
+                        <option value="">Discounts</option>
+                        <option value="">Import Quotations/Sales</option>
+                    </select>
+                </li>
+
+                <li>
+                    <div class="menu-label">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <a href="#">Expences</a>
+                    </div>
+                    <select onchange="window.location.href=this.value;">
+                        <option value="" selected disabled>Options</option>
+                        <option>List Expenses</option>
+                        <option>Add Expenses</option>
+                    </select>
+                </li>
+
+                <li>
+                    <div class="menu-label">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <a href="#">Payment Account</a>
+                    </div>
+                    <select onchange="window.location.href=this.value;">
+                        <option value="" selected disabled>Options</option>
+                        <option>List Accounts</option>
+                        <option>Balance Sheet</option>
+                        <option value="">Trial Balance</option>
+                        <option value="">Cash Flow</option>
+                        <option value="">Payment Account Report</option>
+                        <option value="">Ledger Customer Due Bills</option>
+                        <option value="">Journal Vouchar Entries</option>
+                        <option value="">Sales Recovery </option>
+                        <option value="">Profit Loss Summary</option>
+
+
+
+                    </select>
+                </li>
+
+                <li>
+                    <div class="menu-label">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <a href="#">Reports</a>
+                    </div>
+                    <select onchange="window.location.href=this.value;">
+                        <option value="" selected disabled>Options</option>
+                        <option>Profit Loss Report</option>
+                        <option>Stock Sale Report</option>
+                        <option value="">Sale Representative Report</option>
+                        <option value="">Register Report</option>
+                        <option value="">Expence Report</option>
+                        <option value="">Sale aging report</option>
+                        <option value="">Sale Payment Report</option>
+                        <option value="">Pending Ordes Items</option>
+                        <option value="">Stock Purchase Report</option>
+                        <option value="">Purchase & Sale</option>
+                        <option value="">Items Report</option>
+                        <option value="">Trending Products</option>
+                        <option value="">Stock Adjustment Report</option>
+                        <option value="">Stock Report</option>
+                        <option value="">Customer Groups Report</option>
+                        <option value="">Supplier & Customer Report</option>
+                        <option value="">Stock Report</option>
+                        <option value="">Tax Report</option>
+                        <option value="">Activity Log</option>
+
+                    </select>
+                </li>
+
+
+                <li>
+                    <div class="menu-label">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <a href="#">Notification Template</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="menu-label">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <a href="#">Settings</a>
+                    </div>
+                  <select onchange="window.location.href=this.value;">
+                        <option value="" selected disabled>Options</option>
+                        <option>Business Settings</option>
+                        <option>Business Locations</option>
+                        <option value="">Invoice Settings</option>
+                        <option value="">Barcode Settings</option>
+                        <option value="">Receipt Printers</option>
+                        <option value="">Tax Rates</option>
+                    </select>
+                </li>
+
+
+
+
             </ul>
         </div>
-        <div class="main-content">
 
+        <div class="main-content">
+            <nav class="top-nav">
+                <button> <i class="fas fa-chart-line"></i></button>
+                <h2>Dashboard Overview</h2>
+            </nav>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
+
 </html>

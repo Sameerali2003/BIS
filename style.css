@@ -1,51 +1,95 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.main-container{
-    width:100%;
+body {
+    background-color: #f4f7f6;
+}
+
+.main-container {
     display: flex;
-    height: 100vh;
-    border: 1px solid black;
-    padding: 10px;
 }
 
-.side-bar{
-    width:15%;
-    border: 1px solid black;
-
+/* Sidebar Styling */
+.side-bar {
+    width: 260px;
+    background-color: #1e272e;
+    color: #ecf0f1;
+    min-height: 100vh;
+    padding: 20px 15px;
+    position: sticky;
+    top: 0;
 }
 
-.main-content{
-    width: 85%;
-    border: 1px solid black;
+.heading {
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #3498db;
+    border-bottom: 1px solid #34495e;
+    padding-bottom: 10px;
 }
 
-.heading{
-    font-size:21px;
-    padding: 10px;
-}
-
-ul{
-    padding: 5px;
-    
-}
-li{
+.side-bar ul {
     list-style: none;
-    margin-top: 15px;
-    
 }
 
-a{
-        text-decoration: none;
-        font-size: 17px;
-        gap: 10px;
-        color: black;
-        padding: 8px;
-        
+.side-bar ul li {
+    margin-bottom: 20px;
 }
 
+.menu-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
 
+.menu-label i {
+    width: 20px;
+    color: #3498db;
+}
 
+.menu-label a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu-label a:hover {
+    color: #3498db;
+}
+
+/* Dropdown/Select Styling */
+select {
+    width: 100%;
+    padding: 8px;
+    background-color: #2f3640;
+    color: #dcdde1;
+    border: 1px solid #34495e;
+    border-radius: 5px;
+    outline: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #3498db;
+}
+
+/* Main Content Area */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.top-nav {
+    background: white;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
