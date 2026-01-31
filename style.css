@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    width:100%;
+    display: flex;
+    height: 100vh;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.side-bar{
+    width:15%;
+    border: 1px solid black;
+
+}
+
+.main-content{
+    width: 85%;
+    border: 1px solid black;
+}
+
+.heading{
+    font-size:21px;
+    padding: 10px;
+}
+
+ul{
+    padding: 5px;
+    
+}
+li{
+    list-style: none;
+    margin-top: 15px;
+    
+}
+
+a{
+        text-decoration: none;
+        font-size: 17px;
+        gap: 10px;
+        color: black;
+        padding: 8px;
+        
+}
+
+
+
